@@ -60,7 +60,7 @@ assume {se1.aes_cipher.io_output_valid & se2.aes_cipher.io_output_valid -> se1.a
 assume {se1.aes_cipher.io_output_valid & se2.aes_cipher.io_output_valid -> se1.aes_cipher.io_output_text_14 == se2.aes_cipher.io_output_text_14}
 assume {se1.aes_cipher.io_output_valid & se2.aes_cipher.io_output_valid -> se1.aes_cipher.io_output_text_15 == se2.aes_cipher.io_output_text_15}
 
-assert {bothValid -> io_out_resultOne == io_out_resultTwo}
+assert {se1.aes_cipher.io_output_valid & se2.aes_cipher.io_output_valid & bothValid -> io_out_resultOne == io_out_resultTwo}
 
 set_prove_time_limit 3600
 prove -bg -all
