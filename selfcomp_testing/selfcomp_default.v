@@ -31,10 +31,10 @@ SE se1(
   .io_in_op1(io_in_op1),
   .io_in_op2(io_in_op2),
   .io_in_cond(io_in_cond),
-  .io_in_valid(io_in_validOne),
+  .io_in_valid(io_in_valid),
   .io_in_ready(io_in_ready),
   .io_out_result(io_out_resultOne),
-  .io_out_valid(io_out_valid),
+  .io_out_valid(io_out_validOne),
   .io_out_ready(io_out_ready),
   .io_out_cntr(io_out_cntr)
 );
@@ -46,10 +46,10 @@ SE se2(
   .io_in_op1(io_in_op1),
   .io_in_op2(io_in_op2),
   .io_in_cond(io_in_cond),
-  .io_in_valid(io_in_validTwo),
+  .io_in_valid(io_in_valid),
   .io_in_ready(io_in_ready),
   .io_out_result(io_out_resultTwo),
-  .io_out_valid(io_out_valid),
+  .io_out_valid(io_out_validTwo),
   .io_out_ready(io_out_ready),
   .io_out_cntr(io_out_cntr)
 );
