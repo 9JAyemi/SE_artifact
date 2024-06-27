@@ -1,6 +1,6 @@
-analyze -sva selfcomp_buggy_cache.v
+analyze -sva selfcomp_cache.v
 
-elaborate -top BuggyCacheTester -bbox_mul 256
+elaborate -top CacheTester -bbox_mul 256
 
 #specify clock and reset
 clock clock

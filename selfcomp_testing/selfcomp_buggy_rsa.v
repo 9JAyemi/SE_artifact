@@ -1,10 +1,10 @@
 //==============================================================================
-// Buggy Multiplier SE Testing Module
+// Buggy RSA SE Testing Module
 //==============================================================================
 
-`include "../SE_verilog/SE_buggy_multiplier.v"
+`include "../SE_verilog/SE_buggy_rsa.v"
 
-module BuggyMultiplierTester (
+module BuggyRSATester (
   input clock,
   input reset,
   input [7:0] io_in_inst,

@@ -1,6 +1,6 @@
-analyze -sva selfcomp_buggy_cache.v
+analyze -sva selfcomp_buggy_rsa.v
 
-elaborate -top BuggyCacheTester -bbox_mul 256
+elaborate -top BuggyRSATester -bbox_mul 256
 
 #specify clock and reset
 clock clock

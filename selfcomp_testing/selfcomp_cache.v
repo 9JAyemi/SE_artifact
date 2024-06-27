@@ -1,10 +1,10 @@
 //==============================================================================
-// Buggy Multiplier SE Testing Module
+// Cache SE Testing Module
 //==============================================================================
 
-`include "../SE_verilog/SE_buggy_multiplier.v"
+`include "../SE_verilog/SE_cache.v"
 
-module BuggyMultiplierTester (
+module CacheTester (
   input clock,
   input reset,
   input [7:0] io_in_inst,
