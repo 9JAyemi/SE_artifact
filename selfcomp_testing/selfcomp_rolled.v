@@ -1,10 +1,10 @@
 //==============================================================================
-// Buggy Rolled SE Testing Module
+// Rolled SE Testing Module
 //==============================================================================
 
-`include "../SE_verilog/SE_buggy_rolled.v"
+`include "../SE_verilog/SE_rolled.v"
 
-module BuggyRolledTester (
+module RolledTester (
   input clock,
   input reset,
   input [7:0] io_in_inst,
