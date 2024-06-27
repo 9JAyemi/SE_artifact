@@ -1,4 +1,4 @@
-analyze -sva ./selfcomp_testing/selfcomp_default.v
+analyze -sva selfcomp_default.v
 
 elaborate -top DefaultTester -bbox_mul 256
 
