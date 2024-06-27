@@ -57,3 +57,5 @@ SE se2(
 assign timingLeak = ~(io_out_validOne & io_out_validTwo);
 assign timingLeakDone = io_out_validOne | io_out_validTwo;
 assign bothValid = io_out_validOne & io_out_validTwo;
+
+endmodule
