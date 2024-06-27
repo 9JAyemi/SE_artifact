@@ -12,4 +12,5 @@ stopat se2.aes_invcipher.io_output_op1_0
 assert {timingLeakDone -> !timingLeak}
 # assert {bothValid -> io_out_resultOne == io_out_resultTwo}
 
+set_prove_time_limit 3600
 prove -bg -all
