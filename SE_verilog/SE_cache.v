@@ -43285,7 +43285,7 @@ module SE(
   wire [63:0] output_buffer_lo = {aes_cipher_io_output_text_7,aes_cipher_io_output_text_6,aes_cipher_io_output_text_5,
     aes_cipher_io_output_text_4,aes_cipher_io_output_text_3,aes_cipher_io_output_text_2,aes_cipher_io_output_text_1,
     aes_cipher_io_output_text_0}; // @[SE.scala 242:65]
-  wire [127:0] _output_buffer_T ;/*= {aes_cipher_io_output_text_15,aes_cipher_io_output_text_14,
+  wire [127:0] _output_buffer_T = {aes_cipher_io_output_text_15,aes_cipher_io_output_text_14,
     aes_cipher_io_output_text_13,aes_cipher_io_output_text_12,aes_cipher_io_output_text_11,aes_cipher_io_output_text_10,
     aes_cipher_io_output_text_9,aes_cipher_io_output_text_8,output_buffer_lo}; // @[SE.scala 242:65]*/
   reg [127:0] output_buffer; // @[Reg.scala 16:16]
@@ -44279,9 +44279,9 @@ module SE(
     end else if (seOpValid) begin // @[SE.scala 228:24]
       result_plaintext_buffer <= seoperation_io_result; // @[SE.scala 229:41]
     end
-    // if (aes_cipher_io_output_valid) begin // @[Reg.scala 17:18]
+    if (aes_cipher_io_output_valid) begin // @[Reg.scala 17:18]
       output_buffer <= _output_buffer_T; // @[Reg.scala 17:22]
-    // end
+    end
     if (reset) begin // @[SE.scala 243:35]
       output_valid <= 1'h0; // @[SE.scala 243:35]
     end else begin
