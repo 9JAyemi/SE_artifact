@@ -1,4 +1,4 @@
-analyze -sva ./SE_verilog/SE_default.v
+analyze -sva ../SE_verilog/SE_default.v
 
 elaborate -top SE -bbox_mul 256
 

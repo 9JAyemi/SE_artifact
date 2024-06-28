@@ -1,4 +1,4 @@
-analyze -sva ./SE_verilog/SE_buggy_rolled.v
+analyze -sva ../SE_verilog/SE_buggy_rolled.v
 
 elaborate -top SE -bbox_mul 256
 

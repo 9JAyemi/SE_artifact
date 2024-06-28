@@ -1,4 +1,4 @@
-analyze -sva ./SE_verilog/SE_buggy_multiplier.v
+analyze -sva ../SE_verilog/SE_buggy_multiplier.v
 
 elaborate -top SE -bbox_mul 256
 

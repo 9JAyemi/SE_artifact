@@ -1,4 +1,4 @@
-analyze -sva ./SE_verilog/SE_cache.v
+analyze -sva ../SE_verilog/SE_cache.v
 
 elaborate -top SE -bbox_mul 256
 
