@@ -1585,9 +1585,9 @@ module SE(
   wire [63:0] output_buffer_lo = {aes_cipher_io_output_text_7,aes_cipher_io_output_text_6,aes_cipher_io_output_text_5,
     aes_cipher_io_output_text_4,aes_cipher_io_output_text_3,aes_cipher_io_output_text_2,aes_cipher_io_output_text_1,
     aes_cipher_io_output_text_0}; // @[SE.scala 257:65]
-  wire [127:0] _output_buffer_T; /*= {aes_cipher_io_output_text_15,aes_cipher_io_output_text_14,
+  wire [127:0] _output_buffer_T = {aes_cipher_io_output_text_15,aes_cipher_io_output_text_14,
     aes_cipher_io_output_text_13,aes_cipher_io_output_text_12,aes_cipher_io_output_text_11,aes_cipher_io_output_text_10,
-    aes_cipher_io_output_text_9,aes_cipher_io_output_text_8,output_buffer_lo}; // @[SE.scala 257:65] */
+    aes_cipher_io_output_text_9,aes_cipher_io_output_text_8,output_buffer_lo}; // @[SE.scala 257:65]
   reg [127:0] output_buffer; // @[Reg.scala 16:16]
   reg  output_valid; // @[SE.scala 258:35]
   wire  _GEN_113 = _T_1 ? 1'h0 : output_valid; // @[SE.scala 262:49 263:30 258:35]
