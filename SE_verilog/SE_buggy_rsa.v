@@ -1924,8 +1924,8 @@ module SE(
     end
     if (reset) begin // @[SE.scala 76:24]
       d <= 128'h0; // @[SE.scala 76:24]
-    end else begin
-      d <= 128'h2d43ba82ba81ce9ba98ad8be7c9e4041; // @[SE.scala 79:11]
+    //end else begin
+    //  d <= 128'h2d43ba82ba81ce9ba98ad8be7c9e4041; // @[SE.scala 79:11]
     end
     if (reset) begin // @[SE.scala 77:24]
       e <= 128'h0; // @[SE.scala 77:24]

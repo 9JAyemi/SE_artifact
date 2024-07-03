@@ -20,3 +20,4 @@ assert {bothValid -> io_out_resultOne == io_out_resultTwo}
 set_prove_time_limit 3600
 prove -bg -all
 
+set_engine_mode Tri

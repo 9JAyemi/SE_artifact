@@ -37170,9 +37170,9 @@ module SE(
     if (seOpValid) begin // @[Reg.scala 17:18]
       result_buffer <= padded_result; // @[Reg.scala 17:22]
     end
-    if (aes_cipher_io_output_valid) begin // @[Reg.scala 17:18]
+    //if (aes_cipher_io_output_valid) begin // @[Reg.scala 17:18]
       output_buffer <= _output_buffer_T; // @[Reg.scala 17:22]
-    end
+    //end
     if (reset) begin // @[SE.scala 243:35]
       output_valid <= 1'h0; // @[SE.scala 243:35]
     end else begin
