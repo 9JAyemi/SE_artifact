@@ -11,8 +11,8 @@ stopat se1.aes_invcipher.io_output_op2_*
 stopat se2.aes_invcipher.io_output_op1_*
 stopat se2.aes_invcipher.io_output_op2_*
 
-stopat se1._output_buffer_T
-stopat se2._output_buffer_T
+# stopat se1._output_buffer_T
+# stopat se2._output_buffer_T
 
 assume {bothValid -> se1._output_buffer_T == se2._output_buffer_T}
 
