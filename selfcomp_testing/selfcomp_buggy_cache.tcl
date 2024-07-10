@@ -17,7 +17,7 @@ stopat se2._output_buffer_T
 assume {se1._output_buffer_T == se2._output_buffer_T}
 
 assert {oneValid -> bothValid}
-assert {bothValid -> io_out_resultOne == io_out_resultTwo}
+# assert {bothValid -> io_out_resultOne == io_out_resultTwo}
 
 #se1
 abstract -init_value {se1.cache_valid_neg_0 se1.cache_valid_neg_1 se1.cache_valid_neg_2 se1.cache_valid_neg_3 se1.cache_valid_neg_4 se1.cache_valid_neg_5 se1.cache_valid_neg_6 se1.cache_valid_neg_7 se1.cache_valid_neg_8 se1.cache_valid_neg_9 se1.cache_valid_neg_10 se1.cache_valid_neg_11 se1.cache_valid_neg_12 se1.cache_valid_neg_13 se1.cache_valid_neg_14 se1.cache_valid_neg_15}

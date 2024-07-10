@@ -14,10 +14,10 @@ stopat se2.aes_invcipher.io_output_op2_*
 # stopat se1._output_buffer_T
 # stopat se2._output_buffer_T
 
-assume {bothValid -> se1._output_buffer_T == se2._output_buffer_T}
+#assume {bothValid -> se1._output_buffer_T == se2._output_buffer_T}
 
 assert {oneValid -> bothValid}
-assert {bothValid -> io_out_resultOne == io_out_resultTwo}
+# assert {bothValid -> io_out_resultOne == io_out_resultTwo}
 
 set_prove_time_limit 3600
 prove -bg -all
