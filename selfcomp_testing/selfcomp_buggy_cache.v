@@ -7,6 +7,7 @@
 module BuggyCacheTester (
   input clock,
   input reset,
+  output reg init,
   input [7:0] io_in_inst,
   input [127:0] io_in_op1,
   input [127:0] io_in_op2,
@@ -53,6 +54,15 @@ SE se2(
   .io_out_ready(io_out_ready),
   .io_out_cntr(io_out_cntr)
 );
+
+
+always @(posedge clock) begin
+  init <= 0;
+  if (reset) begin
+    init <= 1;
+  end
+end
+
 
 assign oneValid = io_out_validOne | io_out_validTwo;
 assign bothValid = io_out_validOne & io_out_validTwo;
