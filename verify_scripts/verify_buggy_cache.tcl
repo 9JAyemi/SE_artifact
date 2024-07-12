@@ -17,3 +17,5 @@ abstract -init_value {cache_valid_neg_0 cache_valid_neg_1 cache_valid_neg_2 cach
 abstract -init_value {cache_valid_pos_0 cache_valid_pos_1 cache_valid_pos_2 cache_valid_pos_3 cache_valid_pos_4 cache_valid_pos_5 cache_valid_pos_6 cache_valid_pos_7 cache_valid_pos_8 cache_valid_pos_9 cache_valid_pos_10 cache_valid_pos_11 cache_valid_pos_12 cache_valid_pos_13 cache_valid_pos_14 cache_valid_pos_15}
 
 prove -bg -all
+
+set_engine_mode auto
